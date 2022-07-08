@@ -11,9 +11,16 @@ int keschasAge = 3;
 int ageDifference = age - keschasAge;
 
 System.Console.WriteLine($"The difference between your and Kescha's age is {ageDifference}");
-System.Console.WriteLine($"You are older than or equal to KESCHA: {age >= keschasAge}");
-System.Console.WriteLine($"You are older than to KESCHA: {age > keschasAge}");
-System.Console.WriteLine($"You are younger than or equal to KESCHA: {age < keschasAge}");
-System.Console.WriteLine($"You are younger than KESCHA: {age <= keschasAge}");
-System.Console.WriteLine($"Your age is equal to KESCHA's age: {age == keschasAge}");
-System.Console.WriteLine($"Your age is not equal to KESCHA's age: {age != keschasAge}");
+
+if(age > keschasAge)
+{
+    System.Console.WriteLine("You are older!");
+}
+else if(age == keschasAge)
+{
+    System.Console.WriteLine("You are equal");
+}
+else
+{
+    System.Console.WriteLine("You are younger!");
+}
